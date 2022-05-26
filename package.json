@@ -71,13 +71,13 @@
   "scripts": {
     "lint": "xo",
     "inspect": "jsinspect",
-    "depcheck": "david",
+    "depcheck": "yarn outdated",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha test",
     "docs": "pliers buildRuleDocs",
     "schema": "pliers buildJsonSchema",
     "changelog": "pliers buildChangelog",
-    "pretest": "npm run docs && npm run schema && npm run lint",
-    "test": "npm run coverage",
+    "pretest": "yarn run docs && yarn run schema && yarn run lint",
+    "test": "yarn run coverage",
     "posttest": "(istanbul check-coverage --statements 90 --branches 90 --functions 100 --lines 90 && rimraf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more"
   },
   "dependencies": {
@@ -96,10 +96,9 @@
     "void-elements": "^2.0.1"
   },
   "devDependencies": {
-    "camel-case": "^3.0.0",
+    "camel-case": "^4.1.2",
     "changelog": "^1.0.7",
-    "david": "^7.0.0",
-    "docco": "^0.7.0",
+    "docco": "^0.9.1",
     "istanbul": "^0.4.0",
     "jsinspect": "^0.8.0",
     "mocha": "^2.3.3",
