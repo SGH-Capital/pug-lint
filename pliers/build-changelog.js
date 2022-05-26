@@ -39,7 +39,7 @@ function createTask(pliers) {
             if (/^(.*\s)?v?[0-9]+\.[0-9]+\.[0-9]+(\s.*)?$/.test(message)) {
               previousVersion = message;
 
-              if (previousVersion.length) {
+              if (previousVersion.length > 0) {
                 complete = true;
                 return;
               }
@@ -50,13 +50,13 @@ function createTask(pliers) {
         });
       });
 
-      if (previousVersion.length && previousVersion !== currentVersion) {
+      if (previousVersion.length > 0 && previousVersion !== currentVersion) {
         versions = previousVersion + '...' + currentVersion;
 
         content.push('## ' + currentVersion + ' / ' + moment().format('YYYY-MM-DD'));
         content.push('');
 
-        if (changes.length) {
+        if (changes.length > 0) {
           content.push('### Highlights');
           content.push.apply(content, changes);
           content.push('');
@@ -67,7 +67,7 @@ function createTask(pliers) {
         content.push('');
       }
 
-      if (!content.length) {
+      if (content.length === 0) {
         return done();
       }
 
