@@ -79,9 +79,9 @@ module.exports = generators.Base.extend({
 
       this.optionsType = answers.options;
       this.options = {
-        'true': ['true'],
+        true: ['true'],
         'true|codeSep': ['true', 'code separator'],
-        'other': (answers.optionsExpanded || '').split('|')
+        other: (answers.optionsExpanded || '').split('|')
       }[answers.options];
     }.bind(this));
   },

@@ -78,7 +78,7 @@ describe('cli', function () {
 
   it('should report errors for file path', function (done) {
     var args = [fixturesRelativePath + 'invalid.pug'];
-    var expectedReport = fs.readFileSync(fixturesPath + 'reporters/expected-invalid.txt', 'utf-8');
+    var expectedReport = fs.readFileSync(fixturesPath + 'reporters/expected-invalid.txt', 'utf8');
 
     run(args, function (err, code, stdout, stderr) {
       assert(!err, err);
@@ -92,7 +92,7 @@ describe('cli', function () {
   it('should report errors for directory path', function (done) {
     var dirname = fixturesRelativePath + 'rules/';
     var args = [dirname];
-    var expectedReport = fs.readFileSync(fixturesPath + 'reporters/expected-invalid.txt', 'utf-8');
+    var expectedReport = fs.readFileSync(fixturesPath + 'reporters/expected-invalid.txt', 'utf8');
 
     run(args, function (err, code, stdout, stderr) {
       assert(!err, err);
@@ -106,7 +106,7 @@ describe('cli', function () {
   it('should use config when it is supplied', function (done) {
     var dirname = fixturesRelativePath + 'rules/';
     var args = ['-c', fixturesPath + 'config-file/dotfile/.pug-lintrc', dirname + 'disallow-block-expansion.pug'];
-    var expectedReport = fs.readFileSync(fixturesPath + 'reporters/expected-disallow-block-expansion--console.txt', 'utf-8');
+    var expectedReport = fs.readFileSync(fixturesPath + 'reporters/expected-disallow-block-expansion--console.txt', 'utf8');
 
     run(args, function (err, code, stdout, stderr) {
       assert(!err, err);
@@ -138,7 +138,7 @@ describe('cli', function () {
       fixturesPath + 'config-file/dotfile/.pug-lintrc',
       dirname + 'disallow-block-expansion.pug'
     ];
-    var expectedReport = fs.readFileSync(fixturesPath + 'reporters/expected-disallow-block-expansion--inline.txt', 'utf-8');
+    var expectedReport = fs.readFileSync(fixturesPath + 'reporters/expected-disallow-block-expansion--inline.txt', 'utf8');
 
     run(args, function (err, code, stdout, stderr) {
       assert(!err, err);
