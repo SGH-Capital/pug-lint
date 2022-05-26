@@ -81,7 +81,8 @@
     "posttest": "(istanbul check-coverage --statements 90 --branches 90 --functions 100 --lines 90 && rimraf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more"
   },
   "dependencies": {
-    "acorn": "^5.7.3",
+    "acorn": "^8.7.1",
+    "acorn-walk": "^8.2.0",
     "commander": "^2.20.1",
     "css-selector-parser": "^1.1.0",
     "find-line-column": "^0.5.2",
