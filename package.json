@@ -106,7 +106,7 @@
     "pliers": "^1.2.1",
     "pug-lint-config-clock": "^1.1.0",
     "rimraf": "^3.0.2",
-    "sinon": "^9.2.4",
+    "sinon": "^14.0.0",
     "xo": "^0.15.1",
     "yeoman-generator": "^2.0.5",
     "yo": "^2.0.6"
