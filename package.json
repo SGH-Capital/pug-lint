@@ -102,14 +102,14 @@
     "jsinspect": "^0.12.7",
     "mocha": "^2.5.3",
     "moment": "^2.11.2",
-    "no-case": "^2.3.0",
+    "no-case": "^3.0.4",
     "pliers": "^1.2.1",
     "pug-lint-config-clock": "^1.1.0",
     "rimraf": "^3.0.2",
-    "sinon": "^1.17.2",
+    "sinon": "^5.1.0",
     "xo": "^0.15.1",
-    "yeoman-generator": "^0.23.3",
-    "yo": "^1.8.4"
+    "yeoman-generator": "^2.0.5",
+    "yo": "^2.0.6"
   },
   "xo": {
     "space": true,
