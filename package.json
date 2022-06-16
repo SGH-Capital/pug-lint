@@ -83,7 +83,7 @@
   "dependencies": {
     "acorn": "^8.7.1",
     "acorn-walk": "^8.2.0",
-    "commander": "^2.20.1",
+    "commander": "^3.0.0",
     "css-selector-parser": "^1.1.0",
     "find-line-column": "^0.5.2",
     "glob": "^8.0.3",
@@ -109,7 +109,7 @@
     "rimraf": "^3.0.2",
     "semver-regex": "^3.1.2",
     "sinon": "^14.0.0",
-    "xo": "^0.49.0",
+    "xo": "^0.50.0",
     "yeoman-generator": "^5.6.1"
   },
   "xo": {
