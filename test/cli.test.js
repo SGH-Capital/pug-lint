@@ -2,6 +2,7 @@ var assert = require('assert');
 var bin = require.resolve('../bin/pug-lint');
 var fs = require('fs');
 var path = require('path');
+var process = require('process');
 var spawn = require('child_process').spawn;
 var fixturesPath = path.join(__dirname, 'fixtures/');
 var fixturesRelativePath = './test/fixtures/';
