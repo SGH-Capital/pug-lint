@@ -81,7 +81,7 @@
     "posttest": "(istanbul check-coverage --statements 90 --branches 90 --functions 100 --lines 90 && rimraf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more"
   },
   "dependencies": {
-    "acorn": "^8.8.0",
+    "acorn": "^8.8.1",
     "acorn-walk": "^8.2.0",
     "commander": "^3.0.0",
     "css-selector-parser": "^1.1.0",
@@ -108,8 +108,8 @@
     "pug-lint-config-clock": "^2.0.0",
     "rimraf": "^3.0.2",
     "semver-regex": "^3.1.2",
-    "sinon": "^14.0.0",
-    "xo": "^0.52.3",
+    "sinon": "^14.0.2",
+    "xo": "^0.53.1",
     "yeoman-generator": "^5.7.0"
   },
   "xo": {
@@ -141,6 +141,7 @@
       "unicorn/prefer-array-find": 0,
       "unicorn/no-for-loop": 0,
       "unicorn/prefer-default-parameters": 0,
+      "unicorn/prefer-node-protocol": 0,
       "import/extensions": 0,
       "import/newline-after-import": 0,
       "comma-dangle": 0,
