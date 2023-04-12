@@ -1,5 +1,5 @@
 {
-  "name": "pug-lint",
+  "name": "@sgh-capital/pug-lint",
   "version": "2.7.0",
   "description": "An unopinionated and configurable linter and style checker for Pug (formerly Jade)",
   "author": "Ben Edwards <hello@benedfit.com>",
@@ -56,10 +56,10 @@
     "pug-hinting",
     "jade-hinting"
   ],
-  "homepage": "https://github.com/pugjs/pug-lint",
+  "homepage": "https://github.com/SGH-Capital/pug-lint",
   "repository": {
     "type": "git",
-    "url": "git@github.com:pugjs/pug-lint.git"
+    "url": "git@github.com:SGH-Capital/pug-lint.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
