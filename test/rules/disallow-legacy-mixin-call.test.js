@@ -4,7 +4,7 @@ var assert = require('assert');
 
 function createTest(linter, fixturesPath, test) {
   describe('disallowLegacyMixinCall', function () {
-    describe(true, function () {
+    describe('true', function () {
       before(function () {
         linter.configure({disallowLegacyMixinCall: true});
       });
