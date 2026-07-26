@@ -8,7 +8,7 @@ describe('rules', function () {
   var tests = [];
   var fixturesPath = path.join(__dirname, 'fixtures/rules/');
 
-  glob.sync(path.join(__dirname, 'rules/*.test.js')).forEach(function (file) {
+  glob.sync(path.join(__dirname, 'rules/*.test.js')).sort().forEach(function (file) {
     tests.push(require(file));
   });
 

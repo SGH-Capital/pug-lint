@@ -11,7 +11,7 @@ describe('reporters', function () {
     disallowMultipleLineBreaks: true
   });
 
-  glob.sync(path.join(__dirname, 'reporters/*.test.js')).forEach(function (file) {
+  glob.sync(path.join(__dirname, 'reporters/*.test.js')).sort().forEach(function (file) {
     tests.push(require(file));
   });
 

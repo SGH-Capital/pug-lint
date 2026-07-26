@@ -82,11 +82,11 @@
   },
   "dependencies": {
     "acorn": "^8.10.0",
-    "acorn-walk": "^8.2.0",
+    "acorn-walk": "^8.3.5",
     "commander": "^4.1.1",
     "css-selector-parser": "^1.1.0",
     "find-line-column": "^0.5.2",
-    "glob": "^8.1.0",
+    "glob": "^13.0.6",
     "minimatch": "^9.0.9",
     "pug-attrs": "^3.0.0",
     "pug-error": "^2.1.0",

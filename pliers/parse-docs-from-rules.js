@@ -9,7 +9,7 @@ function parseDocsFromRules(pliers) {
   var rulesPattern = path.join(__dirname, '../lib/rules/*.js');
   var docs = [];
 
-  glob.sync(rulesPattern).forEach(function (file) {
+  glob.sync(rulesPattern).sort().forEach(function (file) {
     var source = fs.readFileSync(file, 'utf8');
     var hasDocs;
 

@@ -4,7 +4,7 @@ var path = require('path');
 var glob = require('glob');
 
 function tasks(pliers) {
-  glob.sync(path.join(__dirname, '/pliers/*.js')).forEach(function (file) {
+  glob.sync(path.join(__dirname, '/pliers/*.js')).sort().forEach(function (file) {
     require(file)(pliers);
   });
 }
