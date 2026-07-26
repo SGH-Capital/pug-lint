@@ -78,7 +78,9 @@
     "changelog": "pliers buildChangelog",
     "pretest": "yarn run docs && yarn run schema && yarn run lint",
     "test": "yarn run coverage",
-    "posttest": "(istanbul check-coverage --statements 90 --branches 90 --functions 100 --lines 90 && rimraf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more"
+    "posttest": "(istanbul check-coverage --statements 90 --branches 90 --functions 100 --lines 90 && rimraf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "acorn": "^8.10.0",
@@ -93,7 +95,8 @@
     "pug-lexer": "^4.1.0",
     "resolve": "^1.22.12",
     "strip-json-comments": "^3.1.1",
-    "void-elements": "^2.0.1"
+    "void-elements": "^2.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "camel-case": "^4.1.2",
@@ -160,5 +163,6 @@
       "no-unused-vars": 0,
       "no-useless-return": 0
     }
-  }
+  },
+  "snyk": true
 }
