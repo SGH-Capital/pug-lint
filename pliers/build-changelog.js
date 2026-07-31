@@ -36,7 +36,7 @@ function createTask(pliers) {
           var message = change.message.split('\n')[0];
 
           if (message) {
-            if (/^(.*\s)?v?[0-9]+\.[0-9]+\.[0-9]+(\s.*)?$/.test(message)) {
+            if (/^(.*\s)?v?\d+\.\d+\.\d+(\s.*)?$/.test(message)) {
               previousVersion = message;
 
               if (previousVersion.length > 0) {

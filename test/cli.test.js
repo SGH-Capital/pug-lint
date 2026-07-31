@@ -85,7 +85,7 @@ describe('cli', function () {
       assert(!err, err);
       assert.equal(code, 2, code);
       assert.equal(stdout, '', stdout);
-      assert.equal(stderr.trim(), expectedReport.replace(/%dirname%/g, fixturesRelativePath).trim(), stderr);
+      assert.equal(stderr.trim(), expectedReport.replaceAll('%dirname%', fixturesRelativePath).trim(), stderr);
       done();
     });
   });
@@ -99,7 +99,7 @@ describe('cli', function () {
       assert(!err, err);
       assert.equal(code, 2, code);
       assert.equal(stdout, '', stdout);
-      assert.equal(stderr.trim(), expectedReport.replace(/%dirname%/g, dirname).trim(), stderr);
+      assert.equal(stderr.trim(), expectedReport.replaceAll('%dirname%', dirname).trim(), stderr);
       done();
     });
   });
@@ -113,7 +113,7 @@ describe('cli', function () {
       assert(!err, err);
       assert.equal(code, 2, code);
       assert.equal(stdout, '', stdout);
-      assert.equal(stderr.trim(), expectedReport.replace(/%dirname%/g, dirname).trim(), stderr);
+      assert.equal(stderr.trim(), expectedReport.replaceAll('%dirname%', dirname).trim(), stderr);
       done();
     });
   });
@@ -145,7 +145,7 @@ describe('cli', function () {
       assert(!err, err);
       assert.equal(code, 2, code);
       assert.equal(stdout, '', stdout);
-      assert.equal(stderr.trim(), expectedReport.replace(/%dirname%/g, dirname).trim(), stderr);
+      assert.equal(stderr.trim(), expectedReport.replaceAll('%dirname%', dirname).trim(), stderr);
       done();
     });
   });
